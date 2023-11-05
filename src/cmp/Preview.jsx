@@ -5,8 +5,7 @@ import Ratings from "./Ratings";
 import Comments from "./Comments";
 const Preview = (props) => {
   const [data, setData] = React.useState(null);
-  //   const path = Window.location.pathname;
-  //   console.log(path);
+
   const targetedImg = "http://localhost:1337";
   React.useEffect(() => {
     const getData = async () => {
@@ -17,20 +16,6 @@ const Preview = (props) => {
           }?populate=*`
         );
         setData(response.data);
-        // if (path.location.pathnae === "/Preview") {
-        // http://localhost:1337/api/visted-nodes
-
-        //
-        // let tempOBJ;
-        // if (data) {
-        //   tempOBJ = {
-        //     name: data.data.attributes.name,
-        //     discription: data.data.attributes.discription,
-        //   };
-        // }
-        // props.onPreviewChange(tempOBJ);
-
-        // }
       } catch (error) {
         console.log("Error", error);
       }
@@ -38,7 +23,6 @@ const Preview = (props) => {
     getData();
   }, [props.id]);
 
-  //   console.log(data.data.attributes.name);
   return (
     <>
       {data && (

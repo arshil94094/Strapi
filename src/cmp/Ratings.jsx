@@ -59,17 +59,6 @@ const Ratings = (props) => {
     default:
       return;
   }
-  // let ele = "";
-  // for(let i = 0 ; i < props.count ; i++){
-  //   ele += `<button className="border-2 border-gray-300 ml-1 bg-indigo-500 rounded-full w-6 h-6 focus:outline-none"></button>`
-  // }
-  // let empty = "";
-  // for(let i = 0 ; i < 5-props.count ; i++  ){
-  //   empty +=`<button className="border-2 border-gray-300 ml-1 rounded-full w-6 h-6 focus:outline-none"></button>`
-  // }
-  //  return <>
-  //  ele + empty
-  // </>
 };
 
 export default Ratings;

@@ -14,13 +14,12 @@ const VisitHistory = (props) => {
     const getInfo = async () => {
       let response = await axios.get("http://localhost:1337/api/nodes");
       const info = await response.data;
-      // console.log("info", info);
+
       setRecord(info.data);
     };
     getInfo();
   }, [props.id]);
 
-  // console.log(record, "record");
   return (
     <>
       <section className="text-gray-600 body-font">

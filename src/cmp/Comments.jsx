@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 const Comments = (props) => {
   const [val, setVal] = useState([]);
-  //   console.log(props.reviews[0].attributes);
+
   useEffect(() => {
     setVal(props.reviews);
-  }, []);
-  //   console.log("val: ", val);
+  }, [props.reviews]);
+
   return (
     <>
       <h2
@@ -14,9 +14,7 @@ const Comments = (props) => {
         style={{ marginLeft: "120px" }}
       >
         Reviews :{" "}
-        <span className="w-100 h-100 bg-cyan-900 text-white rounded-lg ">
-          {/* {val.length} */}
-        </span>
+        <span className="w-100 h-100 bg-cyan-900 text-white rounded-lg "></span>
         <hr className="w-10/12 mt-2 border-b-2 border-b-indigo-400" />
       </h2>
       {val.map((item, index) => {

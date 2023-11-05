@@ -19,7 +19,7 @@ const Nav = () => {
         </svg>
         <Link to="/">
           <span className="ml-12 text-3xl w-1/3 text-center hover:text-gray-900 box-shadow-md rounded-md text-indigo-900 ">
-            Restaurant
+            Restaurant-Blogs
           </span>
         </Link>
 
